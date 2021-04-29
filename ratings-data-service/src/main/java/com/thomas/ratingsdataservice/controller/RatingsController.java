@@ -21,8 +21,6 @@ public class RatingsController {
                 new Rating("5678", 3)
         );
 
-        UserRating userRating = new UserRating(ratings);
-
-        return userRating;
+        return new UserRating(ratings);
     }
 }
